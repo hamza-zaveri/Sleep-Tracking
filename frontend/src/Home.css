@@ -1,0 +1,46 @@
+
+
+.btn {
+    border-width: 0;
+    border-radius: 3px;
+    color: #2B3335;
+  }
+  
+  .btn-a {
+    background-color: #CFBBA9;
+  }
+  .btn-a:hover {
+    background-color: #5e5b59;
+    color: #bebebe;
+  }
+  section.jumbotron {
+    background-image: url(https://images.unsplash.com/photo-1522856339183-9a8b06b05937?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    position: relative;
+    margin: 0;
+  }
+  
+  section.jumbotron .container {
+    padding: 230px 0;
+  }
+  
+  section.jumbotron:before {
+    content: "";
+    position: absolute;
+    opacity: .5;
+    background: #000;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  section.jumbotron .container {
+    position: relative;
+  }
+  .data{
+      margin-bottom: 60px;
+  }
+  
