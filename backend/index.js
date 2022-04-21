@@ -1,5 +1,5 @@
 const express=require('express')
-
+const cors=require("cors");
 require('./conf');
 
 const user=require('./signup.js');
@@ -9,7 +9,7 @@ const res = require('express/lib/response');
 const app=express();
 
 app.use(express.json())
-
+app.use(cors());
 // signup
 app.post("/register",async(req,res)=>{
     let data=new user(req.body)

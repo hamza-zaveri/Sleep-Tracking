@@ -1,19 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import '../Home.css'
 
-const Home=()=>{
+const addData=()=>{
     return(
         <div>
-            <section id="welcome" class="jumbotron">
-            <div class="container text-center">
-                <h1>Sleep Tracker</h1>
-                <p>Track your sleeping time and schedule from this website</p>
-                <p><Link to='/addData'  class="btn btn-a btn-lg">Add Data</Link> </p>
-            </div>
-            </section> 
-            <section class="contact-from pt-4">
-            <div class="container data" id='data'>
+            <div class="container data">
                 <div class="row mt-5">
                     <div class="col-md-7 mx-auto">
                         <div class="form-wrapper">
@@ -24,12 +15,7 @@ const Home=()=>{
                             </div>
                             <form _lpchecked="1">
                                 <div class="row">
-                                <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label>Activity Title</label>
-                                            <input type="text" class="form-control" placeholder="Activity Title"/>
-                                        </div>
-                                    </div>
+    
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label>Sleeping Time</label>
@@ -51,9 +37,8 @@ const Home=()=>{
                         </div>
                     </div>
                 </div>
-            </div>
-            </section>         
+            </div>        
         </div>
     )
 }
-export default Home
+export default addData
