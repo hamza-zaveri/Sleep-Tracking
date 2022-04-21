@@ -19,12 +19,12 @@ const Register=()=>{
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="First name"/>
+                                            <input type="text" class="form-control" placeholder="Full name"/>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Last name"/>
+                                            <input type="text" class="form-control" placeholder=" Username"/>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -35,7 +35,10 @@ const Register=()=>{
                                     <div class="col-md-6">
                                         <div class="form-group">
 
+                                        <label>Gender :</label>
+                                        &nbsp;&nbsp;
     <div class="form-check form-check-inline">
+        
         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
         <label class="form-check-label" for="inlineRadio1">Male</label>
     </div>
@@ -58,16 +61,6 @@ const Register=()=>{
                                             </div>
                                     </div>
                                     
-                                    <div class="col-md-12">
-                                        <select name="countries" class="custom-select" id="exampleFormControlSelect1">
-                                        <option>Select country</option>
-                                        <option>India</option>
-                                        <option>USA</option>
-                                        <option>France</option>
-                                        <option>China</option>
-                                        <option>Japan</option>                         
-                                        </select>
-                                    </div>
                                         
                                     </div>
                                     <div class="mt-3">
