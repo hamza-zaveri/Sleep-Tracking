@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import { Link, useNavigate } from 'react-router-dom'
 import axios from "axios"
-
+import Cookie from 'js-cookie'
 const Login=()=>{
     const navigate = useNavigate();
 
@@ -18,13 +18,16 @@ const Login=()=>{
         })
     }
 
-    const login = () => {
-        axios.post("http://localhost:5000/login", user)
+    const login = (e) => {
+        e.preventDefault()
+        axios.post("http://localhost:5001/login", user)
         .then(res => {
+            console.log(res)
             alert(res.data.message)
+            Cookie.set("token","abcd")
             //setLoginUser(res.data.user)
            navigate("/")
-        })
+        }).catch(err=>{console.log(err)})
     }
 
     return(

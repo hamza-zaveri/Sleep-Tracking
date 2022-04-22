@@ -2,7 +2,7 @@ const express=require('express')
 const cors=require("cors");
 require('./conf');
 
-const user=require('./signup.js');
+const User=require('./signup.js');
 const sleep_detail=require('./add_sleep_details.js');
 const res = require('express/lib/response');
 
@@ -95,7 +95,7 @@ app.put("/edit_profile/:user",async(req,res)=>{
     res.send(edit_data)
 })
 
-app.listen(5000);
+app.listen(5001);
 
 
 
