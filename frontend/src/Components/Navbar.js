@@ -7,7 +7,7 @@ const Navbar = () => {
   const is_logged_in = Cookie.get("token") ? true : false;
   const navigate=useNavigate();
   const logout=()=>{
-      
+
       Cookie.remove('token');
       navigate("/login")
   }
@@ -31,8 +31,7 @@ const Navbar = () => {
 
         <div
           className="collapse navbar-collapse ml-4"
-          id="navbarSupportedContent"
-        >
+          id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
               <NavLink className="nav-link" to="/">

@@ -9,7 +9,6 @@ const Home=()=>{
             <div class="container text-center">
                 <h1>Sleep Tracker</h1>
                 <p>Track your sleeping time and schedule from this website</p>
-                <p><Link to='/addData'  class="btn btn-a btn-lg">Add Data</Link> </p>
             </div>
             </section> 
             <section class="contact-from pt-4">
