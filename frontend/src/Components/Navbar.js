@@ -5,12 +5,11 @@ import { useNavigate } from "react-router-dom";
 import Cookie from "js-cookie";
 const Navbar = () => {
   const is_logged_in = Cookie.get("token") ? true : false;
-  const navigate=useNavigate();
-  const logout=()=>{
-
-      Cookie.remove('token');
-      navigate("/login")
-  }
+  const navigate = useNavigate();
+  const logout = () => {
+    Cookie.remove("token");
+    window.location.href = "/login";
+  };
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -31,23 +30,22 @@ const Navbar = () => {
 
         <div
           className="collapse navbar-collapse ml-4"
-          id="navbarSupportedContent">
+          id="navbarSupportedContent"
+        >
           <ul className="navbar-nav ml-auto">
-            <li className="nav-item active">
-              <NavLink className="nav-link" to="/">
-                Home <span className="sr-only">(current)</span>
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/dashboard">
-                Dashboard
-              </NavLink>
-            </li>
-
-            
-
+          <li className="nav-item active">
+                  <NavLink className="nav-link" to="/">
+                    Home <span className="sr-only">(current)</span>
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/dashboard">
+                    Dashboard
+                  </NavLink>
+                </li>
             {!is_logged_in ? (
               <>
+                
                 <li className="nav-item">
                   <NavLink className="nav-link" to="/login">
                     <span className="glyphicon glyphicon-log-in"></span> Login
@@ -61,16 +59,18 @@ const Navbar = () => {
               </>
             ) : (
               <>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/" onClick={logout}>
-                  <span className="glyphicon glyphicon-log-in" ></span> Log Out
-                </NavLink>
-              </li>
-              <li className="nav-item">
-              <NavLink className="nav-link" to="/editprofile">
-                <span className="glyphicon glyphicon-log-in"></span> EditProfile
-              </NavLink>
-            </li></>
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/" onClick={logout}>
+                    <span className="glyphicon glyphicon-log-in"></span> Log Out
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/editprofile">
+                    <span className="glyphicon glyphicon-log-in"></span>{" "}
+                    EditProfile
+                  </NavLink>
+                </li>
+              </>
             )}
           </ul>
         </div>
