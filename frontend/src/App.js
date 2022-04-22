@@ -10,7 +10,7 @@ import Login from './Components/Login';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Components/Home';
 import Dashboard from './Components/Dashboard';
-import EditProfile from './Components/EditProfile';
+import Editprofile from './Components/Editprofile';
 
 const App = ()=> {
   return (
@@ -28,6 +28,7 @@ const App = ()=> {
         <Route path='/dashboard' element = {<Dashboard/>}/>
         <Route path='/login' element = { <Login/>}/>
         <Route path='/register' element = { <Register/>}/>
+        <Route path='/editprofile' element = { <Editprofile/>}/>
         <Route path='/addData' element = { <addData/>}/>
          
       </Routes>

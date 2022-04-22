@@ -6,7 +6,7 @@ const userschema=new mongoose.Schema({
     contact_number : Number,
     email:String,
     password:String,
-    date_of_birth:Date,
+    dob:Date,
     gender : String
 
 });

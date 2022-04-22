@@ -14,15 +14,14 @@ const Navbar = () => {
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item active"><NavLink className="nav-link" to="/">Home <span className="sr-only">(current)</span></NavLink></li>
                         <li className="nav-item"><NavLink className="nav-link" to="/dashboard">Dashboard</NavLink></li>
-                        {/* <li className="nav-item"><NavLink className="nav-link" to="/register"><span className="glyphicon glyphicon-user"></span> Sign Up</NavLink></li> */}
-                        {/* {
-                             auth ? <><li className="nav-item"><NavLink className="nav-link" to="/#"><span className="glyphicon glyphicon-log-in"></span> EditProfile</NavLink></li>
-                                <li className="nav-item"><NavLink className="nav-link" to="/#"><span className="glyphicon glyphicon-log-in"></span> Log Out</NavLink></li></>
-                                : <>
+                        <li className="nav-item"><NavLink className="nav-link" to="/register"><span className="glyphicon glyphicon-user"></span> Register</NavLink></li>
+                        
+                             <li className="nav-item"><NavLink className="nav-link" to="/editprofile"><span className="glyphicon glyphicon-log-in"></span> EditProfile</NavLink></li>
+                                <li className="nav-item"><NavLink className="nav-link" to="/#"><span className="glyphicon glyphicon-log-in"></span> Log Out</NavLink></li>
+                                
                                     <li className="nav-item"><NavLink className="nav-link" to="/login"><span className="glyphicon glyphicon-log-in"></span> Login</NavLink></li>
-                                </>
-                        } */}
-                            <li className="nav-item"><NavLink className="nav-link" to="/login"><span className="glyphicon glyphicon-log-in"></span> Login</NavLink></li>
+                               
+                        
 
                     </ul>
                 </div>
