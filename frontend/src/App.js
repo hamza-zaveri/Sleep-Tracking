@@ -26,7 +26,6 @@ const App = () => {
     <Dashboard/> */}
 
       <Navbar />
-
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
@@ -42,11 +41,8 @@ const App = () => {
         <Route
           path="/register"
           element={
-            <NotLoggedIn>
-              <Register />
-            </NotLoggedIn>
+              <Register/>
           }
-          exact
         />
         <Route
           path="/editprofile"
