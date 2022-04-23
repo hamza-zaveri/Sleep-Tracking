@@ -95,6 +95,19 @@ app.put("/edit_profile/:user",async(req,res)=>{
     res.send(edit_data)
 })
 
+// display data
+app.get("/dashboard/:user",async(req,res)=>{
+    let sleep_data=await sleep_detail.find(
+        {username:req.params.user}
+    )
+    if(sleep_data.length>0){
+        res.send(sleep_data)
+    }
+    else{
+        res.send('no record found')
+    }
+})
+
 app.listen(5001);
 
 
