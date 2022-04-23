@@ -22,11 +22,14 @@ const Login=()=>{
         e.preventDefault()
         axios.post("http://localhost:5001/login", user)
         .then(res => {
-            console.log(res)
+            // console.log(res)
+            if(res.data.message=="Login Successfull"){
+                Cookie.set("token","abcd")
+                //setLoginUser(res.data.user)
+               navigate("/")
+            }
             alert(res.data.message)
-            Cookie.set("token","abcd")
-            //setLoginUser(res.data.user)
-           navigate("/")
+           
         }).catch(err=>{console.log(err)})
     }
 
