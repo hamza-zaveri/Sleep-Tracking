@@ -51,23 +51,24 @@ const Navbar = () => {
                     <span className="glyphicon glyphicon-log-in"></span> Login
                   </NavLink>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <NavLink className="nav-link" to="/register">
                     <span className="glyphicon glyphicon-user"></span> Register
                   </NavLink>
-                </li>
+                </li> */}
               </>
             ) : (
               <>
-                <li className="nav-item">
-                  <NavLink className="nav-link" to="/" onClick={logout}>
-                    <span className="glyphicon glyphicon-log-in"></span> Log Out
-                  </NavLink>
-                </li>
+               
                 <li className="nav-item">
                   <NavLink className="nav-link" to="/editprofile">
                     <span className="glyphicon glyphicon-log-in"></span>{" "}
                     EditProfile
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/" onClick={logout}>
+                    <span className="glyphicon glyphicon-log-in"></span> Log Out
                   </NavLink>
                 </li>
               </>
